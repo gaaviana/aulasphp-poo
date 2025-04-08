@@ -10,7 +10,8 @@ class Cliente
     // metodos
     public function exibirDados(): void
     {
-        echo "Este é o cliente ". $this->nome;
+        echo "<p style='color:red'>
+                Este é o cliente $this->nome</p>";
     }
 
     public function verificarIdade(int $idade): bool
