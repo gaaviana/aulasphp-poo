@@ -20,9 +20,18 @@ $clienteB = new Cliente();
 $clienteA->nome = "Gabriel";
 $clienteA->idade = 18;
 $clienteA->email = "Gabriel@gmail.com";
+
 ?>
+    <h2>Acessando/lendo os dados dos objetoss</h2>
+    <h3>Cliente A</h3>
+    <ul>
+        <li><b>Nome: </b><?=$clienteA->nome?></li>
+        <li><b>Idade: </b><?=$clienteA->idade?></li>
+        <li><b>Email: </b><?=$clienteA->email?></li>
+    </ul>
 
     <h2>Testes de acesso aos recursos da classe através do objeto</h2>
+
     <pre><?=var_dump($clienteA, $clienteB)?></pre>
 </body>
 </html>
