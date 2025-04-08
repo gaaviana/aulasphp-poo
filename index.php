@@ -17,6 +17,9 @@ require_once "src/Cliente.php";
 $clienteA = new Cliente();
 $clienteB = new Cliente();
 
+$clienteA->nome = "Gabriel";
+$clienteA->idade = 18;
+$clienteA->email = "Gabriel@gmail.com";
 ?>
 
     <h2>Testes de acesso aos recursos da classe através do objeto</h2>
