@@ -6,7 +6,26 @@ class Cliente
     private int $idade;
     private string $email;
 
-    // Métodos setters
+    // Métodos construct (sempre é executado automaticamente ao criar objeto)
+    public function __construct(string $nome, int $idade, string $email)
+    {
+        $this->setNome($nome);
+        $this->setEmail($email);
+        $this->setIdade($idade);
+
+    }
+
+    public function verificarIdade(): string
+    {
+        if ($this->idade< 18) {
+            return "Menor de idade";
+        } elseif ($this->idade < 60) {
+            return "Adulto";
+        } else {
+            return "Idoso";
+        }
+    }
+
     public function setNome(string $nome):void 
     {
         

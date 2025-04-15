@@ -3,26 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 01</title>
+    <title>Exemplo 03</title>
 </head>
 <body>
-    <h1>PHP com POO - Exemplo 02</h1>
+    <h1>PHP com POO - Exemplo 03</h1>
     <hr>
 
 
 <?php
 require_once "src/Cliente.php";
 
-$clienteA = new Cliente();
-$clienteB = new Cliente();
+$clienteA = new Cliente("gabzin apelao", 15, "gabzin.apelaoff@gmail.com");
+$clienteB = new Cliente("nfnf", 18, "nfnf@gmal.com");
 
-$clienteA->setNome("Gabriel");
-$clienteA->setIdade(1);
-$clienteA->setEmail("Gabriel@gmail.com");
-
-$clienteB->setNome("Viana");
-$clienteB->setIdade(22);
-$clienteB->setEmail("viana@gmail.com");
 
 ?>
     <h2>Acessando/lendo os dados dos objetoss</h2>
@@ -30,12 +23,14 @@ $clienteB->setEmail("viana@gmail.com");
         <li><b>Nome: </b><?=$clienteA->getNome()?></li>
         <li><b>Idade: </b><?=$clienteA->getIdade()?></li>
         <li><b>Email: </b><?=$clienteA->getEmail()?></li>
+        <li><b>Faixa etária: </b><?=$clienteA->verificarIdade()?></li>
     </ul>
 
     <ul>
         <li><b>Nome: </b><?=$clienteB->getNome()?></li>
         <li><b>Idade: </b><?=$clienteB->getIdade()?></li>
         <li><b>Email: </b><?=$clienteB->getEmail()?></li>
+        <li><b>Faixa etária: </b><?=$clienteB->verificarIdade()?></li>
     </ul>
 
     <h2>Testes de acesso aos recursos da classe através do objeto</h2>
