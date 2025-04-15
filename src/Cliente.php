@@ -8,6 +8,7 @@ class Cliente
     // Métodos construct (sempre é executado automaticamente ao criar objeto)
     public function __construct(string $nome, string $email)
     {
+  
         $this->setNome($nome);
         $this->setEmail($email);
     }

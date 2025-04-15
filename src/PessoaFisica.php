@@ -6,6 +6,9 @@ class PessoaFisica extends Cliente
 
     public function __construct(string $nome, string $email, int $idade, string $cpf)
     {
+        // chamamos o construtor da superclasse (cliente) e repassamos para ele nome e email
+        parent::__construct($nome, $email);
+
         $this->setIdade($idade);
         $this->setCpf($cpf);
     }
