@@ -11,10 +11,10 @@
 
 
 <?php
-require_once "src/Cliente.php"; // superClasse
-require_once "src/PessoaFisica.php"; // SubClasse
-require_once "src/Situacao.php"; // Enum
-require_once "src/PessoaJuridica.php"; // subClasse
+require_once "src/Models/Cliente.php"; // superClasse
+require_once "src/Models/PessoaFisica.php"; // SubClasse
+require_once "src/Enums/Situacao.php"; // Enum
+require_once "src/Models/PessoaJuridica.php"; // subClasse
 
 $clientePF = new PessoaFisica("gab", "gab@gmail.com", 19, "571.931.358-30
  ");
