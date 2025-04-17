@@ -20,10 +20,15 @@ $clientePF = new PessoaFisica("gab", "gab@gmail.com", 19, "571.931.358-30
  ");
 
  $clientePJ = new PessoaJuridica("viana", "viana@gmail.com", "12.345.678/0001-00", 2010, "V.Airways")
-?>
 
-<pre><?=var_dump($clientePF)?></pre>
-<pre><?=var_dump($clientePJ)?></pre>
-    
+?>
+    <h2>Relatórios</h2>
+
+    <h3>PF</h3>
+    <?=$clientePF->relatorio()?>
+
+    <h3>PJ</h3>
+    <?=$clientePJ->relatorio()?>
+
 </body>
 </html>
