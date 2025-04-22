@@ -1,6 +1,6 @@
 <?php 
 
-class PessoaJuridica extends Cliente 
+final class PessoaJuridica extends Cliente 
 {
     private string $cnpj;
     private int $anoFundacao;

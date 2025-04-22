@@ -30,11 +30,14 @@ var_dump($clienteGenerico)
  -->
     <h2>Relatórios</h2>
 
+    <!-- Acessamos as opç~es de Enum através do getSituação()->name -->
     <h3>PF</h3>
     <?=$clientePF->relatorio()?>
+    <p><b>Situação: </b><?=$clientePF->getSituacao()->name?></p>
 
     <h3>PJ</h3>
     <?=$clientePJ->relatorio()?>
+    <p><b>Situação: </b><?=$clientePJ->getSituacao()->name?></p>
 
 </body>
 </html>
