@@ -22,6 +22,12 @@ $clientePF = new PessoaFisica("gab", "gab@gmail.com", 19, "571.931.358-30
  $clientePJ = new PessoaJuridica("viana", "viana@gmail.com", "12.345.678/0001-00", 2010, "V.Airways")
 
 ?>
+
+<!--  Cliente é uma classe abstrata, portanto, não podemos criar obejto a partir dela
+
+$clienteGenreico = new Cliente("fulano", "fulano@gmail.com")
+var_dump($clienteGenerico)
+ -->
     <h2>Relatórios</h2>
 
     <h3>PF</h3>
