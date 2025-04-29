@@ -11,6 +11,10 @@
 
 
 <?php
+// sempre que trabalhamos com namespaces, será necesario especificar atraves do 'use' quais classes/enums/funções serão usadas
+use MeuProjeto\Models\PessoaFisica;
+use MeuProjeto\Models\PessoaJuridica;
+ 
 require_once "src/Models/Cliente.php"; // superClasse
 require_once "src/Models/PessoaFisica.php"; // SubClasse
 require_once "src/Enums/Situacao.php"; // Enum

@@ -1,4 +1,7 @@
 <?php 
+namespace MeuProjeto\Models;
+// Usamos o 'use' também para indicar a utilização de classes internas do PHP
+use InvalidArgumentException;
 final class PessoaFisica extends Cliente
 {
     private int $idade;
